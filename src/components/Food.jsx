@@ -27,11 +27,9 @@ const Food = () => {
 
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12">
-      <h1 className="text-black-600 font-bold text-4xl text-center">
-        Sneakers
-      </h1>
+      <h1 className="text-black-600 font-bold text-4xl text-left">Sneakers</h1>
       {/* Filter Row */}
-      <div className="flex flex-col lg:flex-row justify-between items-center mt-6">
+      <div className="flex flex-col lg:flex-row justify-between items-center mt-8">
         {/* Fliter Type */}
         <div className="flex justify-between w-full lg:w-auto">
           <div className="flex flex-wrap">
@@ -42,28 +40,28 @@ const Food = () => {
               All
             </button>
             <button
-              onClick={() => filterType("burger")}
+              onClick={() => filterType("Nike")}
               className="m-1 px-3 py-1 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
             >
-              Burgers
+              Nike
             </button>
             <button
-              onClick={() => filterType("pizza")}
+              onClick={() => filterType("Underarmour")}
               className="m-1 px-3 py-1 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
             >
-              Pizza
+              Underarmour
             </button>
             <button
-              onClick={() => filterType("salad")}
+              onClick={() => filterType("Adidas")}
               className="m-1 px-3 py-1 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
             >
-              Salads
+              Adidas
             </button>
             <button
-              onClick={() => filterType("chicken")}
+              onClick={() => filterType("Peak")}
               className="m-1 px-3 py-1 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
             >
-              Chicken
+              Peak
             </button>
           </div>
         </div>
@@ -124,7 +122,7 @@ const Food = () => {
             <div className="flex justify-between px-2 py-4">
               <p className="font-bold">{item.name}</p>
               <p>
-                <span className="bg-orange-500 text-white p-1 rounded-full">
+                <span className="bg-green-500 text-white p-1 rounded-full">
                   {item.price}
                 </span>
               </p>
