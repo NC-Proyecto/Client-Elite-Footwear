@@ -11,12 +11,13 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
 import { ImHome3 } from "react-icons/im";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
+    <div className="max-w-[1640px] mx-auto flex justify-between items-center p-3">
       {/* Left side */}
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
@@ -24,16 +25,17 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <h1 className="text-2xl sm:text-2xl lg:text-3xl px-2"></h1>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 font-bold">
-            <FaBasketballBall />
+          <h1 className="text-2xl sm:text-2xl lg:text-3xl px-2 font-bold">
+            Elite Footwear
           </h1>
         </div>
       </div>
 
-      {/* Cart button */}
+      {/* Cart button
       <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full">
         <BsFillCartFill size={20} className="mr-2" /> Cart
-      </button>
+      </button> */}
+      <img src={logo} alt="Logo" style={{ width: "150px", height: "150px" }} />
 
       {/* Mobile Menu */}
       {/* Overlay */}
