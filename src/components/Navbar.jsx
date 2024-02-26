@@ -10,6 +10,7 @@ import { BsFillCartFill, BsFillSaveFill } from "react-icons/bs";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaUserFriends, FaWallet } from "react-icons/fa";
 import { MdFavorite, MdHelp } from "react-icons/md";
+import { ImHome3 } from "react-icons/im";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -56,17 +57,17 @@ const Navbar = () => {
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4">
-          Best <span className="font-bold">Eats</span>
+          <span className="font-bold">Elite Footwear</span>
         </h2>
         <nav>
-          <ul className="flex flex-col p-4 text-gray-800">
-            <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={25} className="mr-4" /> Orders
+          <ul className="flex flex-col p-4 text-gray-800 ">
+            <li className="text-xl py-4 flex " style={{ cursor: "pointer" }}>
+              <ImHome3 size={25} className="mr-4" /> Home
             </li>
-            <li className="text-xl py-4 flex">
+            <li className="text-xl py-4 flex" style={{ cursor: "pointer" }}>
               <MdFavorite size={25} className="mr-4" /> Favorites
             </li>
-            <li className="text-xl py-4 flex">
+            {/* <li className="text-xl py-4 flex">
               <FaWallet size={25} className="mr-4" /> Wallet
             </li>
             <li className="text-xl py-4 flex">
@@ -80,7 +81,7 @@ const Navbar = () => {
             </li>
             <li className="text-xl py-4 flex">
               <FaUserFriends size={25} className="mr-4" /> Invite Friends
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
